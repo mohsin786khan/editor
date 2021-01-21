@@ -1,11 +1,17 @@
 import React from 'react';
-import TextEditor from './TextEditor';
+import EditorApp from './EditorApp';
+import images from './image/images.png';
+import ImageCropper from './ImageCropper';
+import Emoji from './Emoji';
 
 function App() {
   return (
     <div className="App">
+      <Emoji />
       <h1>editor</h1>
-      <TextEditor/>
+      <EditorApp />
+      <ImageCropper
+      src={images} />
     </div>
   );
 }
