@@ -10,7 +10,7 @@ function Emoji() {
     }
 
     return (
-        <div>
+        <div className="emojis">
          <h1 style={{textAlign: 'center'}}> emoji picker</h1>
         <div style={{textAlign: 'center',marginLeft:'810px'}}>
             <Picker  onEmojiClick={onEmojiClick} skinTone={SKIN_TONE_MEDIUM_DARK}/>
@@ -22,12 +22,12 @@ function Emoji() {
 
 
 const EmojiData = ({chosenEmoji}) => (
-    <div style={{textAlign: 'center',marginRight: '810px'}}>
-      {/* <br></br>
-      <br></br> */}
+    <div  style={{textAlign: 'center',marginRight: '210px'}}>
+      <br></br>
+      <br></br>
       <hr></hr>
-      <strong>Names:</strong> {chosenEmoji.names.join(', ')}<br/>
-      <strong>Symbol:</strong> {chosenEmoji.emoji}<br/>
+       {chosenEmoji.names.join(', ')}<br/>
+       {chosenEmoji.emoji}<br/>
     </div>
   );
 
